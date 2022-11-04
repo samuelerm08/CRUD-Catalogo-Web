@@ -1,0 +1,54 @@
+﻿@page
+@model CRUDCatalogoWeb.Pages.Articulos.EditarModel
+
+<h1>Editar Articulos</h1>
+
+<form action="" method="post">
+
+    <p>Descripción</p>
+    <input type="text" name="descripcion">
+
+    <p>Marca</p>
+    <input type="text" name="marca">
+
+    <p>Modelo</p>
+    <input type="text" name="modelo">
+
+    <p>Precio</p>
+    <input type="number" name="precio">
+
+    <p>Stock</p>
+    <input type="number" name="stock">
+
+    <br />
+
+    <br />
+
+    <button class="btn btn-success">Guardar Cambios</button>
+
+</form>
+
+<a href="/"
+   class="btn btn-light">
+
+    Volver
+
+</a>
+
+@{
+    if (Request.Method == "POST")
+    {
+        if (Request.Form.Keys.Contains("__RequestVerificationToken"))
+        {
+            Model.Lista.Editar(new Model.Articulo()
+                    {
+                        descripcion = Request.Form["descripcion"],
+                        marca = Request.Form["marca"],
+                        modelo = Request.Form["modelo"],
+                        precio = Request.Form["precio"],
+                        stock = Convert.ToInt16(Request.Form["stock"])
+                    });
+            Response.Redirect("/");
+        }
+    }
+}

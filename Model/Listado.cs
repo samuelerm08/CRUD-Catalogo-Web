@@ -1,6 +1,6 @@
 ﻿namespace CRUDCatalogoWeb.Model
 {
-    public class Listado
+    public class Listado : ILista
     {
         private List<Articulo> listado = new List<Articulo>();
 

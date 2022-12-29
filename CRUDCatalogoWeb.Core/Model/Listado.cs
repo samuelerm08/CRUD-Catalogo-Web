@@ -26,13 +26,13 @@ namespace CRUDCatalogoWeb.Model.Core
             Lista.Remove(a);
             Reseed();
         }
-        public void Editar(Articulo a)
+        public void Editar(int ID, Articulo a)
         {
-            Lista[a.ID].Marca = a.Marca;
-            Lista[a.ID].Modelo = a.Modelo;
-            Lista[a.ID].Descripcion = a.Descripcion;
-            Lista[a.ID].Stock = a.Stock;
-            Lista[a.ID].Precio = a.Precio;
+            Lista[ID].Marca = a.Marca;
+            Lista[ID].Modelo = a.Modelo;
+            Lista[ID].Descripcion = a.Descripcion;
+            Lista[ID].Stock = a.Stock;
+            Lista[ID].Precio = a.Precio;
         }
         private void Reseed()
         {

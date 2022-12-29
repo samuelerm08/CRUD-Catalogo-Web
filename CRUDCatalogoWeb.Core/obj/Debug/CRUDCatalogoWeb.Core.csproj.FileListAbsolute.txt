@@ -1,0 +1,6 @@
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\bin\Debug\CRUDCatalogoWeb.Core.dll
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\bin\Debug\CRUDCatalogoWeb.Core.pdb
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\obj\Debug\CRUDCatalogoWeb.Core.csproj.AssemblyReference.cache
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\obj\Debug\CRUDCatalogoWeb.Core.csproj.CoreCompileInputs.cache
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\obj\Debug\CRUDCatalogoWeb.Core.dll
+C:\Users\samue\OneDrive\Escritorio\PRO\WEB PROGRAMMING\Herramientas de Programacion\Herramientas de Programación\CRUDCatalogoWeb.Core\obj\Debug\CRUDCatalogoWeb.Core.pdb

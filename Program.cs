@@ -1,4 +1,4 @@
-using CRUDCatalogoWeb.Model;
+using CRUDCatalogoWeb.Model.Core;
 namespace CRUDCatalogoWeb
 {
     public class Program

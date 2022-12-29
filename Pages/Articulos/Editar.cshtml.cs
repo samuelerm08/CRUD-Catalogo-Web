@@ -15,11 +15,12 @@ namespace CRUDCatalogoWeb.Pages.Articulos
         public Articulo? Articulo;
         public void OnGet()
         {
-            Articulo = Lista.ObtenerUno(Convert.ToInt32(Request.Query["ID"]));
+            Articulo = Lista.ObtenerUno(Convert.ToInt16(Request.Query["ID"]));
         }
         public void OnPost()
         {
-            Lista.Editar(new Articulo()
+            int ID = Convert.ToInt16(Request.Query["ID"]);
+            Lista.Editar(ID, new Articulo()
             {
                 Descripcion = Request.Form["Descripcion"],
                 Marca = Request.Form["Marca"],

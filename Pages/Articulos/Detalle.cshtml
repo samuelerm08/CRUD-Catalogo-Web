@@ -1,0 +1,52 @@
+﻿@page
+@model CRUDCatalogoWeb.Pages.Articulos.DetalleModel
+
+<h1>Articulos</h1>
+<hr />
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Articulo.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Articulo.Descripcion)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Articulo.Marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Articulo.Marca)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Articulo.Modelo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Articulo.Modelo)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Articulo.Precio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Articulo.Precio)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Articulo.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Articulo.Stock)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="/Index" class="btn btn-primary">Volver</a>
+</div>
+
+<div>
+    <a asp-page="Articulos/Editar" asp-route-id="@Model.Articulo?.ID" class="btn btn-warning">Editar</a>
+</div>

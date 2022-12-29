@@ -1,0 +1,49 @@
+﻿@page
+@model CRUDCatalogoWeb.Pages.Articulos.EditarModel
+
+<h1>Editar Articulos</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="Articulo.Descripcion"></label>
+                <input asp-for="Articulo.Descripcion" name="Descripcion" value="@Model.Articulo?.Descripcion" class="form-control" />
+                <span asp-validation-for="Articulo.Descripcion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Articulo.Marca"></label>
+                <input asp-for="Articulo.Marca" name="Marca" value="@Model.Articulo?.Marca" class="form-control" />
+                <span asp-validation-for="Articulo.Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Articulo.Modelo"></label>
+                <input asp-for="Articulo.Modelo" name="Modelo" value="@Model.Articulo?.Modelo" class="form-control" />
+                <span asp-validation-for="Articulo.Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Articulo.Precio"></label>
+                <input asp-for="Articulo.Precio" name="Precio" value="@Model.Articulo?.Precio" class="form-control" />
+                <span asp-validation-for="Articulo.Precio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Articulo.Stock"></label>
+                <input asp-for="Articulo.Stock" name="Stock" value="@Model.Articulo?.Stock" class="form-control" />
+                <span asp-validation-for="Articulo.Stock" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Guardar Cambios" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<a asp-page="/Index" class="btn btn-primary">Volver</a>

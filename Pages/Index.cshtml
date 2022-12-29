@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+
+<p>
+    <a asp-page="Articulos/Crear" class="btn btn-success">Crear</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Articulo.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articulo.Descripcion)
+            </th>
+            <th>Detalle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Lista.VerTodos())
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+
+                <td>
+                    <a asp-page="Articulos/Editar" asp-route-id="@item.ID" class="btn btn-warning">Editar</a> |
+                    <a asp-page="Articulos/Detalle" asp-route-id="@item.ID" class="btn btn-primary">Detalle</a> |
+                    <a asp-page="Articulos/Borrar" asp-route-id="@item.ID" class="btn btn-danger">Borrar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

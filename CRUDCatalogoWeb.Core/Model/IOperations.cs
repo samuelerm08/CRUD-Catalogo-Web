@@ -10,8 +10,8 @@ namespace CRUDCatalogoWeb.Model.Core
 
         void Crear(Articulo a);
         
-        void Editar(Articulo a);
+        void Editar(int ID, Articulo a);
         
-        void Eliminar(int id);                
+        void Eliminar(int ID);                
     }
 }
